@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% from "macro/navbar.html" import navbar %}
+{{ navbar('/','Inicio','/apunte','Apuntes','/busqueda','Busqueda') }}
+
+<body class="indigo darken-3">
+
+<br>
+<a href="/apunte" class="btn-floating btn-large waves-effect waves-light cyan"><i class="material-icons">mode_edit</i></a>
+ <h4>Apuntes</h4><br>
+<a href="/busqueda" class="btn-floating btn-large waves-effect waves-light cyan"><i class="material-icons">search</i></a>
+ <h4>Busqueda</h4><br>
+<div class="row">
+<div class="container">
+
+
+
+    <div class="card col s5 ">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/static/image/vegeta.jpg" width="300" height="90">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Semeste 1<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Todo sobre este semestre aqui</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Semeste 1<i class="material-icons right">close</i></span>
+            <p>
+                <ul>
+            <li>Algebra</li>
+            <li>Calculo Diferencial e Integral</li>
+            <li>Introduccion a la Ingenieria en Computacion</li>
+            <li>Geometria analitica</li>
+            <li>Computadoras y Programacion</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <div class="col s1"></div>
+    <div class="card col s5 ">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/static/image/goku.jpg" width="300" height="90">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Semestre 2<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Todo sobre este semestre aqui</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Semeste 2<i class="material-icons right">close</i></span>
+            <p>
+                <ul>
+            <li>Programacion Orientada a objetos</li>
+            <li>Algebra Lineal</li>
+            <li>Comunicacion Oral y Escrita</li>
+            <li>Calculo Vectorial</li>
+            <li>Administracion Contabilidad y Costos</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="card col s5">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/static/image/vegeta2.jpg" width="300" height="90">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Semestre 3<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Todo sobre este semestre aqui</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Semeste 3<i class="material-icons right">close</i></span>
+            <p>
+            <ul>
+                <li>Electricidad y Magnetismo</li>
+                <li>Metodos Numericos</li>
+                <li>Ecuaciones Diferenciales</li>
+                <li>Estructura de Datos</li>
+                <li>Introduccion a la Economia</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <div class="col s1"></div>
+    <div class="card col s5">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/static/image/goku1.jpg"  width="300" height="90">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Semestre 4<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Todo sobre este semestre aqui</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Semeste 4<i class="material-icons right">close</i></span>
+            <p>
+            <ul>
+                <li>Investigacion de Operaciones y Sistemas</li>
+                <li>Analisis de Circuitos Electricos</li>
+                <li>Estructuras Discretas</li>
+                <li>Ingenieria Economica</li>
+                <li>Probabilidad y Estadistica</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="card col s5">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/static/image/vegeta3.png" width="300" height="90">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Semestre 5<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Todo sobre este semestre aqui</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Semeste 5<i class="material-icons right">close</i></span>
+            <p>
+            <ul>
+                <li>Diseno y Analisis de Algoritmos</li>
+                <li>Dispositivos Electronicos</li>
+                <li>Lenguajes Formales y Automatas</li>
+                <li>Medicion e Instrumentacion</li>
+                <li>Programacion de Sistemas</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <div class="col s1"></div>
+    <div class="card col s5">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/static/image/goku3.jpg" width="300" height="90">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Semstre 6<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Todo sobre este semestre aqui</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Semeste 6<i class="material-icons right">close</i></span>
+            <p>
+            <ul>
+                <li>Calidad</li>
+                <li>Compiladores</li>
+                <li>Diseno Logico</li>
+                <li>Ingenieria de software 1</li>
+                <li>Sistemas de Comunicaciones</li>
+                <li>Sistemas Operativos</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="card col s5">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/static/image/vegeta4.png" width="300" height="90">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Semestre 7<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Todo sobre este semestre aqui</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Semeste 7<i class="material-icons right">close</i></span>
+            <p>
+            <ul>
+                <li>Bases de Datos 1</li>
+                <li>Dinamica de Sistemas Fisicos</li>
+                <li>Diseno de Sistemas Digitales</li>
+                <li>Redes de Computadoras 1</li>
+                <li>Seguridad Informatica</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <div class="col s1"></div>
+    <div class="card col s5">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/static/image/goku4.jpg" width="300" height="90">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Semestre 8<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Todo sobre este semestre aqui</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Semeste 8<i class="material-icons right">close</i></span>
+            <p>
+            <ul>
+                <li>Microprocesadores y Microcontroladores</li>
+                <li>Organizacion y Administracion de Centros de Computo</li>
+                <li>Sistemas de Control</li>
+                <li>Sistemas de Informacion</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="col s3"></div>
+    <div class="card col s5 ">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="/static/image/gokudios.jpg"  width="300" height="90">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Semestre 9<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">Todo sobre este semestre aqui</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Semeste 9<i class="material-icons right">close</i></span>
+            <p>
+            <ul>
+                <li>Gestion de Redes de Computadoras</li>
+                <li>Habilidades Directivas</li>
+                <li>Inteligencia Artificial</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+{% endblock %}

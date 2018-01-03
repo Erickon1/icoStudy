@@ -1,0 +1,32 @@
+{% macro navbar(location = '/home', label = 'Home',otro='',lotro='',otro2='',lotro2='') %}
+<nav>
+    <div class="nav-wrapper teal">
+        <a href="/" class="brand-logo">GDG UNAM</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="{{ location }}">{{ label }}</a></li>
+
+            <li><a href="{{ otro }}">{{ lotro }}</a></li>
+            <li><a href="{{ otro2 }}">{{ lotro2 }}</a></li>
+            {% if 'username' in session %}
+                <li><a href="/logout">Logout</a></li>
+                <li><a>Hola, {{ session['username'] }}</a></li>
+            {% elif label == 'regresar' %}
+
+            {% else %}
+            <!--
+                <li><a href="/login">Login</a></li>
+            -->
+            {% endif %}
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="{{ location }}">{{ label }}</a></li>
+
+            {% if 'username' in session %}
+            <li><a href="/logout">Cerrar Sesion</a></li>
+            {% endif %}
+
+        </ul>
+    </div>
+</nav>
+{% endmacro %}

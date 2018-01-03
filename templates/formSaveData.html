@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% from "macro/navbar.html" import navbar %}
+    {{ navbar('/home','Home','/busqueda','Busqueda') }}
+
+{% from "macro/renderField.html" import render_field %}
+    <body background="../static/image/mrrobot.jpg" >
+    <br>
+    <div class="row ">
+        <div class="container">
+
+            <div class="container">
+                <h5 class="white-text">{{ e }}</h5>
+        <div class="col s10 ">
+            <form action="" method="post" name="Form1">
+
+                <div class="col s10" id="titulo" name="x">
+
+                    {{ render_field(fo.titulo) }}
+
+                </div>
+                <div class="col s10" id="semestree">
+
+                    {{ render_field(fo.semestre) }}
+
+                </div>
+
+                <div class="col s10" id="materiaa" disabled value=" Null ">
+
+                    {{ render_field(fo.materia) }}
+                </div>
+
+                <div class="col s10">
+                    <i class="material-icons prefix">account_circle</i>
+                    {{ render_field(fo.profesor) }}
+                </div>
+                <div class="col s10">
+                    <i class="material-icons prefix">comment</i>
+                    {{ render_field(fo.code) }}
+                </div>
+                <div class="col s10" >
+                    <button  id="x" class="btn waves-effect waves-light" type="submit" name="action">Save
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+
+                <a  href="/home" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">home</i></a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    </body>
+{% endblock %}

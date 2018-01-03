@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% from "macro/navbar.html" import navbar %}
+    {{ navbar('/home','Home','/apunte','Apuntes') }}
+
+    <body class="cyan lighten-3">
+    <br>
+    <a href="/busqueda" class="btn-floating btn-large waves-effect waves-light teal"><i class="material-icons">search</i></a>
+
+
+<div class="container">
+
+    {% for x in a %}
+        <ul>
+            <h5> <li> Titulo: {{ x.titulo }}</li> </h5>
+            <li> Materia: {{ x.materia }}</li>
+            <li> Profesor: {{ x.profesor }}</li>
+            <li> Usuario: {{ x.user }}</li>
+            <li> Apunte: </li>
+            <h4> <li> {{ x.code }} </li> </h4>
+        </ul>
+        <br>
+
+    {% endfor %}
+
+    </body>
+{% endblock %}
